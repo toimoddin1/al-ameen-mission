@@ -1,0 +1,607 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.logo {
+  width: auto; /* Adjust size as needed */
+  height: 80px;
+}
+
+.nav-link {
+  font-weight: bold;
+  padding: 10px 20px; /* Padding for buttons */
+  border-radius: 15px; /* Rounded corners */
+  margin: 0 5px; /* Margin between buttons */
+}
+
+.nav-link:hover {
+  background-color: #89ab20; /* Hover color */
+  transform: translateY(-3px); /* Lift effect */
+  color: white;
+}
+
+.nav-link:focus {
+  outline: none; /* Remove default outline */
+}
+
+.nav-link i {
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover i {
+  color: #89ab20; /* Icon hover color */
+}
+
+
+.navbar {
+  justify-content: space-between; /* Ensures spacing between items */
+}
+
+
+
+h2.al-ameen-title {
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 50px;
+  color: green;
+}
+
+.al-ameen-title {
+  margin: 0; /* Remove default margin */
+  flex-grow: 1; /* Allow the title to grow and take available space */
+  text-align: center; /* Center align the text */
+  font-size: 1.5rem; /* Font size adjustment */
+}
+.dropdown-menu {
+  background-color: #fff; /* Background color of dropdown */
+  border: 1px solid #007bff; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.dropdown-item {
+  color: #333; /* Default text color */
+  padding: 10px 15px; /* Padding for dropdown items */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.dropdown-item:hover {
+  background-color: #89ab20; /* Background color on hover */
+  color: white; /* Text color on hover */
+  border-radius: 10px; /* Rounded corners on hover */
+}
+
+.dropdown-item:focus {
+  outline: none; /* Remove default outline */
+  background-color: #0056b3; /* Background color when focused */
+  color: white; /* Text color when focused */
+}
+
+
+.menu-container {
+  background-color: #0086b2; /* Set the background color */
+  padding: 15px 0; /* Vertical padding for the menu */
+  margin-top: 15px;
+}
+
+.menu-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: center; /* Center items horizontally */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.submenu {
+  display: none; /* Hide submenus initially */
+  position: absolute;
+  background-color: white;
+  top: 100%; /* Position below the parent item */
+  left: 0;
+  list-style: none;
+  padding: 10px;
+  min-width: 230px; /* Set a minimum width for submenus */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+  z-index: 1000;
+}
+
+/* Submenu items */
+.submenu li {
+  padding: 8px 8px;
+  text-align: start;
+}
+
+.submenu li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect for submenu items */
+.submenu li a:hover {
+  font-size: 15px;
+  background-color: #89ab20;
+  padding: 10px;
+  color: black;
+  border-radius: 5px;
+}
+
+/* Show submenu on hover */
+.menu-item:hover .submenu {
+  display: block;
+}
+
+
+
+.menu-item {
+  margin: 0 10px; /* Margin between menu items */
+  position: relative;
+}
+
+.menu-item a {
+  color: white; /* Text color */
+  font-size: 20px;
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make text bold */
+  transition: color 0.3s; /* Smooth transition for color */
+}
+
+.menu-item a:hover {
+  color: #ffeb3b; /* Change text color on hover */
+}
+
+.navbar-toggler {
+  display: none; /* Hide by default */
+  background-color: #0086b2;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+.navbar-toggler i {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* When toggled to "X", rotate and transform */
+.navbar-toggler.active i {
+  transform: rotate(45deg);
+}
+.carousel img {
+  height: 400px; /* Adjust height as needed */
+  object-fit: cover; /* Ensures images cover the area */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for controls */
+  border-radius: 50%; /* Round controls */
+}
+
+.horizontal-box {
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+#zakat{
+  background-color: #f36e51;
+  
+}
+#cmplt{
+  background-color: #F0A21A;
+}
+#pub{
+  background-color: #6666FF;
+}
+.horizontal-box a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+}
+
+.horizontal-box a:hover {
+  color: #000;
+ 
+}
+.horizontal-box i {
+  margin-right: 5px;
+}
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 10;
+}
+.sub-menu li {
+  padding: 8px 12px;
+}
+
+.sub-menu li a {
+  color: #007bff;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.sub-menu li a:hover {
+  color: #0056b3;
+}
+
+
+
+.important-box {
+  text-align: center;
+  border: 1px solid #ddd; /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition for smooth effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Initial shadow */
+}
+.important-box:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.important-box h5 {
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #628201;
+}
+
+.important-box p,
+.important-box ul {
+  font-size: 1rem;
+  color: #333;
+}
+
+.important-box ul li {
+  margin-bottom: 8px;
+}
+
+.important-box ul li a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.important-box ul li a:hover {
+  color: #F0A21A;
+  
+}
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.animated-badge {
+  animation: pulse 1s infinite;
+}
+
+
+
+
+
+
+/* .general-secretary-desk {
+  background-color: #f9f9f9;
+} */
+
+.secretary-box {
+  background: url(images/bg.jpg);
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  /*box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; */
+  padding: 20px;
+}
+
+/* Hover effect */
+.secretary-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.image-wrapper {
+  flex-shrink: 0;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid #007bff; /* Blue border */
+}
+
+.secretary-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect on image */
+.image-wrapper:hover .secretary-img {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.message-content {
+  color: #333;
+}
+
+.desk-title {
+  color: #628201;
+  font-weight: bold;
+}
+
+.desk-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.desk-name {
+  color: #007bff;
+  font-size: 1.2rem;
+}
+
+
+
+.info-box {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-height: 300px;
+
+}
+
+.info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.mission-box {
+  background-color: #e9f5e9;
+  border-color: #28a745;
+ 
+}
+
+.awards-box {
+  background-color: #fff4e1;
+  border-color: #ffc107;
+}
+
+.vision-box {
+  background-color: #e1eff7;
+  border-color: #007bff;
+}
+
+.info-box h5 {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.info-box p {
+  font-size: 0.99rem;
+  color: #555;
+  text-align: justify;
+  
+}
+
+.info-box i {
+  font-size: 1.5rem;
+  color: inherit;
+  margin-bottom: 8px;
+}
+
+.roundedd-corner {
+  border-radius: 10px; /* Adjust to your preferred corner roundness */
+}
+
+.roundedd-corner:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.mission-vision-title {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding as needed */
+  background: #fff; /* Background color of text */
+  z-index: 1; /* Make sure text is above border */
+  color: #333; /* Text color */
+  border-radius: 5px; /* Optional rounded corners for the title */
+}
+
+/* Gradient border */
+.mission-vision-title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px; /* Match the border radius of the title */
+  background: linear-gradient(45deg, #628201, #00A2E8, #0086B2, #F36E51);
+  background-size: 300% 300%;
+  z-index: -1; /* Place behind the text */
+  animation: borderAnimation 4s linear infinite; /* Animation duration and repetition */
+}
+
+/* Keyframes for the animation */
+@keyframes borderAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.history-section {
+  background: url(/images/history.jpg);
+  margin: 10px;
+  border-radius: 10px;
+  
+}
+/* Content Box Styling */
+.content-box {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Section Title Styling */
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #628201;
+  margin-bottom: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+/* Text Styling for History */
+.history-text {
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+/* Video Styling */
+.video-content {
+  width: 100%;
+  border-radius: 8px;
+
+}
+
+
+
+
+
+
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for separation */
+}
+
+.footer a:hover {
+  color: #ffeb3b; /* Hover effect for links */
+}
+
+.footer p, .footer ul {
+  margin: 0; /* Remove default margins */
+}
+
+.footer h5 {
+  margin-bottom: 15px; /* Space below headers */
+}
+
+
+
+@media (max-width: 768px) {
+  .navbar-text {
+    font-size: 1.2rem; /* Smaller size for mobile */
+  }
+  .logo {
+    height: 60px;
+  }
+  h2.al-ameen-title {
+    font-size: 2rem; /* Slightly smaller on mobile */
+  }
+  
+  .nav-link:hover {
+    color: #fff; /* Hover color */
+    text-align: center;
+
+  }
+  .navbar-toggler {
+    display: block;
+    margin: 10px auto;
+}
+.menu-list {
+  display: none; /* Hide menu by default on small screens */
+  flex-direction: column; /* Stack items vertically */
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  width: 90%; /* Make the menu take up most of the screen */
+  margin: 10px auto; /* Center the menu */
+}
+.menu-item {
+  margin: 10px 0; /* Add spacing between items */
+}
+
+.menu-item a {
+  color: black;
+  font-size: 18px;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  display: block;
+}
+
+.menu-item a:hover {
+  background-color: #ffeb3b;
+  color: black;
+}
+
+.submenu {
+  display: none; /* Hide submenus by default */
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu-item.dropdown:hover .submenu {
+  display: block; /* Show submenu on hover */
+}
+.important-box {
+  text-align: center; /* Center content on smaller screens */
+}
+#imageCarousel {
+  margin-bottom: 15px;
+}
+.secretary-box {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.message-content {
+  margin-top: 15px;
+}
+
+.card-title {
+  font-size: 1.6rem;
+}
+.card-text {
+  font-size: 1rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+}
+.history-text {
+  font-size: 0.9rem;
+}
+}
